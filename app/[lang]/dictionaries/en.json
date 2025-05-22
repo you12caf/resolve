@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Resolve | Creative Media Agency",
+    "description": "Resolve is a premium creative media agency specializing in editing, design, motion graphics, social media management, voice over, and shooting services."
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Elevate Your Brand Through Visual Brilliance",
+    "subtitle": "Premium creative solutions for brands that demand excellence",
+    "cta": "Let's Work Together",
+    "typingTexts": [
+      "Crafting visual stories",
+      "Designing brand experiences",
+      "Creating digital masterpieces",
+      "Transforming ideas into reality"
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive creative solutions for your brand",
+    "items": {
+      "editing": {
+        "title": "Editing",
+        "description": "Professional video editing with cinematic techniques and color grading to elevate your visual content."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Stunning visual designs that communicate your brand's message with clarity and impact."
+      },
+      "motion": {
+        "title": "Motion Graphics",
+        "description": "Dynamic animations and visual effects that bring your ideas to life and engage your audience."
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Strategic content creation and management to build your brand presence across platforms."
+      },
+      "voice": {
+        "title": "Voice Over",
+        "description": "Professional voice talent and audio production to give your content the perfect sound."
+      },
+      "shooting": {
+        "title": "Shooting",
+        "description": "High-quality video production with state-of-the-art equipment and creative direction."
+      }
+    }
+  },
+  "about": {
+    "title": "About Resolve",
+    "subtitle": "Our story and mission",
+    "description": "Resolve is a premium creative media agency founded on the principle that exceptional media can transform businesses. With our team of industry experts, we deliver world-class creative solutions that help brands stand out in today's competitive landscape. Our commitment to excellence, innovation, and client satisfaction has made us a trusted partner for businesses seeking to elevate their visual identity."
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Selected works from our creative journey",
+    "viewProject": "View Project",
+    "categories": {
+      "all": "All",
+      "editing": "Editing",
+      "design": "Design",
+      "motion": "Motion",
+      "social": "Social",
+      "voice": "Voice",
+      "shooting": "Shooting"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's discuss your next project",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you! We'll be in touch soon."
+  },
+  "footer": {
+    "rights": "© 2025 Resolve. All rights reserved.",
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "success": "Thank you for subscribing!"
+    }
+  }
+}
