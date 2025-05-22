@@ -35,7 +35,7 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
@@ -48,7 +48,7 @@ export default function RootLayout({
 
   return (
     <html lang={validLang} dir={isRtl ? "rtl" : "ltr"} suppressHydrationWarning>
-      <body className={`${inter.className} antialiased bg-background text-foreground`}>
+      <body className={`${inter.className} antialiased bg-background text-foreground${isRtl ? ' font-arabic' : ''}`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="flex min-h-screen flex-col">
             <Navbar lang={validLang} />

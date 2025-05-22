@@ -126,7 +126,7 @@ const fallbackDictionaryAr = {
 }
 
 // This is a server component, but we'll avoid async/await to prevent the error
-export default function HomePage({ params }: { params?: { lang?: string } }) {
+export default async function HomePage({ params }: { params?: { lang?: string } }) {
   // Safe default values
   const lang = params?.lang && locales.includes(params.lang) ? params.lang : "en"
   const isRtl = lang === "ar"
@@ -141,37 +141,37 @@ export default function HomePage({ params }: { params?: { lang?: string } }) {
   const services = [
     {
       id: "editing",
-      icon: Scissors,
+      icon: "Scissors",
       title: dict.services.items.editing.title,
       description: dict.services.items.editing.description,
     },
     {
       id: "design",
-      icon: Paintbrush,
+      icon: "Paintbrush",
       title: dict.services.items.design.title,
       description: dict.services.items.design.description,
     },
     {
       id: "motion",
-      icon: Clapperboard,
+      icon: "Clapperboard",
       title: dict.services.items.motion.title,
       description: dict.services.items.motion.description,
     },
     {
       id: "social",
-      icon: Share2,
+      icon: "Share2",
       title: dict.services.items.social.title,
       description: dict.services.items.social.description,
     },
     {
       id: "voice",
-      icon: Mic,
+      icon: "Mic",
       title: dict.services.items.voice.title,
       description: dict.services.items.voice.description,
     },
     {
       id: "shooting",
-      icon: Camera,
+      icon: "Camera",
       title: dict.services.items.shooting.title,
       description: dict.services.items.shooting.description,
     },
@@ -259,14 +259,14 @@ export default function HomePage({ params }: { params?: { lang?: string } }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {services.map((service, index) => (
               <ServiceCard
                 key={service.id}
                 icon={service.icon}
                 title={service.title}
                 description={service.description}
-                delay={index * 200}
+                delay={0}
                 href={`/${lang}/services#${service.id}`}
                 isRtl={isRtl}
               />

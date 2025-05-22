@@ -2,11 +2,11 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Scissors, Paintbrush, Clapperboard, Share2, Mic, Camera } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 interface ServiceCardProps {
-  icon: LucideIcon
+  icon: string
   title: string
   description: string
   delay: number
@@ -14,9 +14,20 @@ interface ServiceCardProps {
   isRtl: boolean
 }
 
-export function ServiceCard({ icon: Icon, title, description, delay, href, isRtl }: ServiceCardProps) {
+const iconMap = {
+  Scissors,
+  Paintbrush,
+  Clapperboard,
+  Share2,
+  Mic,
+  Camera,
+}
+
+export function ServiceCard({ icon, title, description, delay, href, isRtl }: ServiceCardProps) {
   const [isVisible, setIsVisible] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
+
+  const Icon = iconMap[icon] || Scissors
 
   useEffect(() => {
     const observer = new IntersectionObserver(
