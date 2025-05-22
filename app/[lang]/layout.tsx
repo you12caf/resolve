@@ -43,7 +43,7 @@ export default async function RootLayout({
   params: { lang: string }
 }) {
   // Validate the language parameter with a default
-  const validLang = params?.lang && locales.includes(params.lang) ? params.lang : "en"
+  const validLang = locales.includes(params.lang) ? params.lang : "en"
   const isRtl = validLang === "ar"
 
   return (

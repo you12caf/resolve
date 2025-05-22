@@ -126,9 +126,9 @@ const fallbackDictionaryAr = {
 }
 
 // This is a server component, but we'll avoid async/await to prevent the error
-export default async function HomePage({ params }: { params?: { lang?: string } }) {
+export default async function HomePage({ params }: { params: { lang: string } }) {
   // Safe default values
-  const lang = params?.lang && locales.includes(params.lang) ? params.lang : "en"
+  const lang = locales.includes(params.lang) ? params.lang : "en"
   const isRtl = lang === "ar"
 
   // Use static content instead of async dictionary
